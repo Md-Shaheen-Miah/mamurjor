@@ -30,8 +30,10 @@ class ImageController extends Controller
     public function store(StoreImageRequest $request)
     {
         $request->validate([
-            'images.*' => 'required|image|mimes:jpg,jpeg,png'
+            'images' => 'required',
+            'images.*' => 'required|mimes:jpg,jpeg,png|max:2048'
         ]);
+        
 
         if ($request->hasfile('images')) {
             foreach ($request->file('images') as $file) {

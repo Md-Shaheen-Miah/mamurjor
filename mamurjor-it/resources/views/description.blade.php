@@ -11,8 +11,8 @@
         <a href="/" class="logo">MAMURJOR<span style="color:red;">*</span>IT</a>
         <ul class="nav-links">
             <li><a href="{{ route('image-upload.create') }}">Image-Upload</a></li>
-            <li><a href="#about">Crud</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact">Crud</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="/description">Task-Description</a></li>
         </ul>
           <div style="margin-right: 10%; ">
@@ -51,7 +51,14 @@
     </div>
     </nav>
 
-    <h1>This is a description page</h1>
+    <h1 style="margin-left: 5%;margin-top:2%;">The details of how the work is done are given below:</h1>
+    <p style="margin-left: 5%;margin-top:2%;">
+        1.First Laravel Composer is installed.<br>
+        => composer create-project --prefer-dist Laravel/Laravel MAMURJOR-IT <br><br>
+        2.Installed breeze for Authentication <br>
+        =>Composer require Laravel/breeze --dev <br>
+        =>php artisan breeze:install blade<br>
+    </p>
 
 </body>
 </html>

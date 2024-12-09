@@ -13,8 +13,8 @@
         <a href="/" class="logo">MAMURJOR<span style="color:red;">*</span>IT</a>
         <ul class="nav-links">
             <li><a href="{{ route('image-upload.create') }}">Image-Upload</a></li>
-            <li><a href="#about">Crud</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact">Crud</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="/description">Task-Description</a></li>
         </ul>
           <div style="margin-right: 10%; ">
@@ -55,11 +55,13 @@
 
     <form action="{{ route('image-upload.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
+
         @if(session('success'))
         <p style="color: green;">{{ session('success') }}</p>
-    @endif
-        <label for="images">Choose Images:</label>
-        <input type="file" name="images[]" multiple required>
+        @endif
+
+        <label for="images">Choose images:</label>
+        <input type="file" name="images[]" multiple>
         <button type="submit">Upload</button>
     </form>
 
