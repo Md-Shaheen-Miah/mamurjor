@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\InformationController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -43,3 +44,8 @@ Route::get('/contacts/edit/{id}', [ContactController::class, 'edit']);
 Route::delete('/contacts/delete/{id}', [ContactController::class, 'destroy']);
 
 
+Route::get('/info1', [InformationController::class, 'stepOne'])->name('info1');
+Route::post('/info1', [InformationController::class, 'postStepOne'])->name('form.post.info1');
+
+Route::get('/info2', [InformationController::class, 'stepTwo'])->name('info2');
+Route::post('/info2', [InformationController::class, 'postStepTwo'])->name('form.post.info2');

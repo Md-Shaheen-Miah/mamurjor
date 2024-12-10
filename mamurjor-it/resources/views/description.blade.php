@@ -12,7 +12,7 @@
         <ul class="nav-links">
             <li><a href="{{ route('image-upload.create') }}">Image-Upload</a></li>
             <li><a href="/contact">Crud</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/info1">Information</a></li>
             <li><a href="/description">Task-Description</a></li>
         </ul>
           <div style="margin-right: 10%; ">
@@ -58,6 +58,9 @@
         2.Installed breeze for Authentication <br>
         =>Composer require Laravel/breeze --dev <br>
         =>php artisan breeze:install blade<br>
+        3. Developed functionality to save multiple images in Laravel.<br>
+        4.Created a CRUD operation using AJAX.<br>
+        5.Set up UI authentication with email verification.<br>
     </p>
 
 </body>

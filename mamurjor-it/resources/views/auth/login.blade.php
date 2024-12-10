@@ -12,8 +12,8 @@
         <a href="/" class="logo">MAMURJOR<span style="color:red;">*</span>IT</a>
         <ul class="nav-links">
             <li><a href="{{ route('image-upload.create') }}">Image-Upload</a></li>
-            <li><a href="#about">Crud</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact">Crud</a></li>
+            <li><a href="/info1">Information</a></li>
             <li><a href="/description">Task-Description</a></li>
         </ul>
           <div style="margin-right: 10%; ">

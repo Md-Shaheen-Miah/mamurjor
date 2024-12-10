@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Example</title>
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/info.css') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -50,16 +51,35 @@
         </header>
     </div>
     </nav>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Our Website</h2>
-            <p>We create stunning and responsive web designs to grow your business!</p>
-          
-        </div>
-    </section>
-
+     <h1>Information Form part-1</h1>
+     <form action="#" method="#">
+        @csrf
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        
+        <label>Father Name:</label>
+        <input type="text" name="father_name" placeholder="Enter your father's name" required>
+        
+        <label>Mother Name:</label>
+        <input type="text" name="mother_name" placeholder="Enter your mother's name" required>
+        
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <button type="submit">Next</button>
+    </form>
+    
     
 
 </body>
 </html>
+
+
+
+
+
